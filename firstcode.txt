@@ -1,0 +1,4 @@
+select * from Products WHERE Section='Hogar' OR Section='Ferreteria' OR Section='Aseo';
+select * from Products where Date between '2019-01-01' and '2019-06-01';
+select * from Products where Price < 3.0 and Price > 1.2;
+
