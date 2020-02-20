@@ -1,0 +1,11 @@
+
+select * from Products order by Price;
+
+de menor a mayor or ...
+
+select * from Products order by Price desc;
+
+de mayor a menor ...  
+
+
+
