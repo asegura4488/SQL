@@ -11,4 +11,16 @@ Primero ordenar por sección y luego por precio
 
 select * from Products order by Section, Price desc;
 
+Actualizar un valor dependiendo de un campo ...
+
+update Products set Name = 'Computador' where Section='Hogar'
+
+Numero de registros en la table ...
+
+select count(1) from Products;
+
+Insertar un nuevo elemento en la table
+
+INSERT INTO `Products` VALUES ('Hogar','Cama', 0.50 ,'2019-10-10',6.0);
+
 
