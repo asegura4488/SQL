@@ -1,0 +1,24 @@
+
+
+Agrupar por seccion, y luego obtener el la suma del precio en casa sección.---------------
+
+select Section, sum(Price) from Products group by Section;
+
+Para ordenar por suma: se debe agregar un alias sum(Price) as PartialSum y luego order by: -------------
+
+select Section, sum(Price) as PartialSum from Products group by Section order by PartialSum;
+Otra opcion-----------------------
+select Section, Name, avg(Price) as PartialSum from Products group by Name order by PartialSum;
+
+------------- Poner un criterio más having ------------------------
+
+select Section, Name, avg(Price) as PartialSum from Products group by Section having Name='Escoba';
+select Section, Name, avg(Price) as PartialSum from Products group by Section having PartialSum > 1.3;
+
+-------------- Contar cuantos hay en cada sección --------------------
+
+select Section, count(Name) as contador from Products group by Section;
+select Section, count(Name) as contador from Products group by Section having Section='Ferreteria';
+
+
+
