@@ -1,0 +1,17 @@
+
+----------- Calculando el iva -------------------------
+
+select Section, Price, Price*1.21 as IVA from Products;
+
+
+------------- redondear las cantidades -----------------
+
+select Section, Price, round(Price*1.21,2) as IVA from Products;
+
+-------------- Imprimir la fecha ------------------------
+
+select Section, Date, Date() as Today from Products;
+
+--------------- Imprimir la hora --------------------------
+
+select Section, Date, time() as Today from Products;
